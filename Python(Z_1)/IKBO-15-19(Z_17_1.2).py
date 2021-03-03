@@ -1,16 +1,16 @@
 import math
 
-def Foo (x):
+def f12 (x):
+    result = 0
     if x < 70:
-        return (40 * (x ** 4) -math.abs(x))
-    elif 70 <= x <= 113:
-        return (x ** 3 + x**2)
+        result = (40 * (x ** 4) - abs(x))
+        return result
+    elif 70 <= x < 113:
+        result = (x ** 3 + x**2)
+        return result
     elif 113 <= x < 137:
-        return ((x**3 / 7) + x ** 8 + 44)
+        result = ((x**3 / 7) + x ** 8 + 44)
+        return result
     elif x >= 137:
-        return (math.log(x ** 3) + x**6)
-
-a = Foo(75)
-b = Foo(140)
-print (f"{a:.2e}")
-print (f"{b:.2e}")
+        result = (math.log(x ** 3) + x**6)
+        return result
