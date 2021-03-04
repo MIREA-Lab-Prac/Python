@@ -25,13 +25,13 @@ def f21(a):
         if(num < T[3][2]):
             num = T[3][2]
 
-    if(a[0] == "ston"):
+    if(a[0] == "ston" and a[1] == "nl"):
         if(num < T[0][0]):
             num = T[0][0]
-    if (a[0] == "mtml"):
+    if (a[0] == "mtml" and a[1] == "nl"):
         if(num < T[0][1]):
             num = T[0][1]
-    if (a[0] == "cirru"):
+    if (a[0] == "cirru" and a[1] == "nl"):
         if(num < T[0][2]):
             num = T[0][2]
 
@@ -55,3 +55,4 @@ def f21(a):
     if (a[4] == "fish" and a[1] == "mirah"):
         if(num < T[5][2]):
             num = T[5][2]
+    return num
